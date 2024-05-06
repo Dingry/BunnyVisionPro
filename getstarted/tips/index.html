@@ -429,9 +429,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tips-on-teleoperation" class="md-nav__link">
+  <a href="#tips-for-initialization" class="md-nav__link">
     <span class="md-ellipsis">
-      Tips on Teleoperation
+      Tips for Initialization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-for-teleoperation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips for Teleoperation
     </span>
   </a>
   
@@ -609,9 +618,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tips-on-teleoperation" class="md-nav__link">
+  <a href="#tips-for-initialization" class="md-nav__link">
     <span class="md-ellipsis">
-      Tips on Teleoperation
+      Tips for Initialization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-for-teleoperation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips for Teleoperation
     </span>
   </a>
   
@@ -645,43 +663,55 @@
 
 
 <h1 id="tips-and-troubleshooting">Tips and Troubleshooting<a class="headerlink" href="#tips-and-troubleshooting" title="Permanent link">&para;</a></h1>
-<ol>
-<li>Extend your arms forward with your palms facing downwards, maintaining a slight separation between your hands. Keep
-   your arms and hands in the same position until the calibration is completed.</li>
-<li>Start the client application for calibration between the human and robot hands with the following commands.
-    <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>python<span class="w"> </span>bunny_teleop/bimanual_teleop_client.py
-</span></code></pre></div></li>
-</ol>
-<p>Note: During this process, the default setting, <code>ALIGN_SEPARATELY</code>, independently aligns each robot hand with your
-   respective human hand, ignoring the space between your hands. Additionally, the system automatically aligns with the
-   gravity direction of your hands (<code>align_gravity_dir</code> set to <code>True</code>).</p>
-<p>We also offer support for various initialization modes to tailor the calibration process to different operational
-   needs. For more detailed information on these modes, please refer to <a href="../../advanced/initialization/">initialization</a>.</p>
-<ol>
-<li>Once calibration is completed, you can start controlling the robots by simply moving your hands.</li>
-</ol>
-<h2 id="tips-on-teleoperation">Tips on Teleoperation<a class="headerlink" href="#tips-on-teleoperation" title="Permanent link">&para;</a></h2>
-<ol>
-<li>When using the system for the first time, it is advisable to move your arms slowly until you get familiar with the
-   system. Typically, the robot arms should be posed a velocity limit, which can lead to an awareable latency. Moving
-   slowly can help prevent potential collisions.</li>
-<li>The calibration of human hand positions is set in the world coordinate system and is mostly independent of the Vision
-   Pro's location. Therefore, if you would like to teleoperate the robot arm to some position that is out of human
-   hand's action space, you can adjust your own position by stepping back, forward, left, or right, while trying to keep
-   your hands in their current poses to avoid unexpected movement of human hands caused by the adjustment.</li>
-<li>It is generally best to keep the hands parallel. However, in certain situations, an asymmetrical configuration of the
-   initial hand poses might be beneficial. For instance, if you need the right robot arm to reach a higher position
-   while maintaining a lower position with the left arm, consider raising your right hand lower than the left during the
-   calibration process. This is because the robot arms are always initialized at the same height. A lower initial
-   position of the right hand will give you more room to move your right hand upwards.</li>
-<li>It is recommended to fully expose all fingers under the Vision Pro's camera to ensure accurate hand tracking. If the fingers are not fully visible, the system may not be able to detect them, leading to oscillations or unexpected movements of the robot fingers.</li>
-</ol>
+<h2 id="tips-for-initialization">Tips for Initialization<a class="headerlink" href="#tips-for-initialization" title="Permanent link">&para;</a></h2>
+<details class="tip">
+<summary>Good Human Hand Pose for Initialization</summary>
+<p>Extend your arms forward with your palms facing downwards, maintaining a slight separation between your hands. Keep
+your arms and hands in the same position until the calibration is completed. An example can be
+found <a href="https://dingry.github.io/BunnyVisionPro/advanced/initialization/#initializing-the-human-frame">here</a>.</p>
+</details>
+<details class="tip">
+<summary>Aligning Gravity Direction by Default</summary>
+<p>During this process, the system automatically aligns with the gravity direction of your hands (<code>align_gravity_dir</code>
+set to <code>True</code>). This means that one of the xyz axis for initial human frame is always aligned with gravity direction. </p>
+</details>
+<h2 id="tips-for-teleoperation">Tips for Teleoperation<a class="headerlink" href="#tips-for-teleoperation" title="Permanent link">&para;</a></h2>
+<details class="tip">
+<summary>Initial Use Caution</summary>
+<p>When operating the system for the first time, move your arms slowly to familiarize yourself with its response.
+The robots have velocity limits which can introduce latency, so slow movements help avoid potential collisions.</p>
+</details>
+<details class="tip">
+<summary>Calibration and Positioning</summary>
+<p>Hand position calibration is based on the world coordinate system and largely independent of the Vision Pro’s location.
+To reach positions beyond your immediate action space, adjust your stance (step back, forward, left, or right) 
+without changing the pose of your hands, preventing unintended hand movements.</p>
+</details>
+<details class="tip">
+<summary>Hand Pose Strategy</summary>
+<p>Typically, keep your hands parallel. However, for tasks requiring different heights, start with one hand lower
+during calibration—this allows more movement range upward. 
+For example, lower your right hand initially if you need it to move higher during operation.</p>
+</details>
+<details class="tip">
+<summary>Visibility for Accurate Tracking</summary>
+<p>Ensure all fingers are fully visible to the Vision Pro’s camera for precise hand tracking. Partial visibility can
+result in inaccurate tracking, causing oscillations or unintended robot finger movements.</p>
+</details>
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
-<ol>
-<li>If the IP address displayed in the Tracking Streamer app is incorrect or appears as an IPv6 address, navigate to the
-   settings menu on your Vision Pro device: <code>Settings &gt; WiFi &gt; Details &gt; IP Configuration</code>. Ensure you obtain the
-   correct IPv4 address from this menu.</li>
-</ol>
+<details class="question" open="open">
+<summary>IP of Vision Pro</summary>
+<p>If the IP address displayed in the Tracking Streamer app is incorrect or appears as an IPv6 address, navigate to the
+settings menu on your Vision Pro device: <code>Settings &gt; WiFi &gt; Details &gt; IP Configuration</code>. Ensure you obtain the
+correct IPv4 address from this menu.</p>
+</details>
+<details class="question" open="open">
+<summary>Restarting the Teleop Server After Extended Use</summary>
+<p>The teleoperation <code>robot_server</code> is designed to operate continuously, refreshing automatically with each new <code>InitializationConfig</code>
+received from the client. However, due to the unpredictable nature of communication, the server may occasionally fail after prolonged use.
+If you observe multiple error messages in the server tab, terminate the server process and restart the <code>robot_server</code>. 
+Restart the <code>vision_server</code> only if the connection between the computer and VisionPro is disrupted.</p>
+</details>
 
 
 

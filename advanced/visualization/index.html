@@ -510,6 +510,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Visualization Tools
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -519,6 +530,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#3d-cursor-for-initialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D Cursor for Initialization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gizmo-for-moving-robot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gizmo for Moving Robot
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -552,6 +600,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#3d-cursor-for-initialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      3D Cursor for Initialization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gizmo-for-moving-robot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gizmo for Moving Robot
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -571,26 +645,31 @@
 <h1 id="visualization-tools">Visualization Tools<a class="headerlink" href="#visualization-tools" title="Permanent link">&para;</a></h1>
 <p>To provide an intuitive user interface of the initialization and teleoperation, a web-based GUI visualizes these
 processes in real-time. This feature utilizes the <a href="https://github.com/NVlabs/sim-web-visualizer">sim_web_visualizer</a>.</p>
+<h2 id="3d-cursor-for-initialization">3D Cursor for Initialization<a class="headerlink" href="#3d-cursor-for-initialization" title="Permanent link">&para;</a></h2>
 <p>During initialization, a large 3D cursor displayed on the interface becomes increasingly transparent to reflect
 progress, transitioning to two smaller 3D gizmos indicating the end effector positions upon completion.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;"><img alt="center" src="../../assets/images/teleop_framework.png" /></th>
-<th style="text-align: center;"><img alt="center" src="../../assets/images/teleop_framework.png" /></th>
-<th style="text-align: center;"><img alt="center" src="../../assets/images/teleop_framework.png" /></th>
-<th style="text-align: center;"><img alt="center" src="../../assets/images/teleop_framework.png" /></th>
+<th style="text-align: center;"><img alt="center" src="../../assets/images/align_center.png" /></th>
+<th style="text-align: center;"><img alt="left" src="../../assets/images/align_left.png" /></th>
+<th style="text-align: center;"><img alt="right" src="../../assets/images/align_right.png" /></th>
+<th style="text-align: center;"><img alt="both" src="../../assets/images/align_both.png" /></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">ALIGN_CENTER</td>
-<td style="text-align: center;">ALIGN_LEFT</td>
-<td style="text-align: center;">ALIGN_RIGHT</td>
-<td style="text-align: center;">ALIGN_SEPARATELY</td>
+<td style="text-align: center;"><code>ALIGN_CENTER</code></td>
+<td style="text-align: center;"><code>ALIGN_LEFT</code></td>
+<td style="text-align: center;"><code>ALIGN_RIGHT</code></td>
+<td style="text-align: center;"><code>ALIGN_SEPARATELY</code></td>
 </tr>
 </tbody>
 </table>
+<h2 id="gizmo-for-moving-robot">Gizmo for Moving Robot<a class="headerlink" href="#gizmo-for-moving-robot" title="Permanent link">&para;</a></h2>
+<p>After initialization, the robot will begin moving inside the web visualizer. The two small gizmo shows the end effector
+pose from human.</p>
+<p><img alt="" src="../../assets/videos/output_file.webp" /></p>
 
 
 

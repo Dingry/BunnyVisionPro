@@ -697,7 +697,7 @@
 and a client that communicate via data streaming, leveraging the Apple Vision Pro as hand pose tracking device. To
 interact with Vision Pro, download the <a href="https://apps.apple.com/us/app/tracking-streamer/id6478969032">Tracking Streamer</a>
 app on your device.</p>
-<p>The server can be installed and run inside a Docker container, while the client is super 
+<p>The server can be installed and run inside a Docker container, while the client is super
 light-weight can be installed using pip.</p>
 <h2 id="server-installation">Server Installation<a class="headerlink" href="#server-installation" title="Permanent link">&para;</a></h2>
 <p>Before running the server code inside a Docker container, you need to either pull an existing Docker image or build one
@@ -707,7 +707,8 @@ yourself.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker<span class="w"> </span>pull<span class="w"> </span>yzqin/bunny_teleop_server
 </span></code></pre></div>
 <h3 id="building-a-docker-image-from-a-dockerfile-optional">Building a Docker Image from a Dockerfile (Optional)<a class="headerlink" href="#building-a-docker-image-from-a-dockerfile-optional" title="Permanent link">&para;</a></h3>
-<p>If you need a custom setup, you can also build your own Docker image using the provided Dockerfile.</p>
+<p>If you need a custom setup, you can also build your own Docker image using the provided Dockerfile from
+our <a href="https://github.com/Dingry/bunny_teleop_server">Bunny Teleop Server Codebase</a>.</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Dingry/bunny_teleop_server.git
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">cd</span><span class="w"> </span>bunny_teleop_server/docker/minimal
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>

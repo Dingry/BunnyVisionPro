@@ -12,7 +12,7 @@
     ·
     <a href="https://www.researchgate.net/profile/Chengzhe-Jia"><strong>Chengzhe Jia</strong></a>
     <br>
-    <a href="https://scholar.google.com/citations?user=OQQzJb4AAAAJ&hl=en"><strong>Shiqi Yang</strong></a>
+    <a href="https://aaronyang1223.github.io/"><strong>Shiqi Yang</strong></a>
     ·
     <a href="https://rchalyang.github.io/"><strong>Ruihan Yang</strong></a>
     .

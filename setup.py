@@ -17,6 +17,7 @@ with open(_here / name / "__init__.py") as f:
 core_requirements = [
     "pyzmq",
     "numpy",
+    "tornado",
 ]
 
 dev_requirements = [

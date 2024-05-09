@@ -10,7 +10,7 @@ set up on different machines, for simplicity, this tutorial assumes they are on 
 Execute the following command to run the teleoperation server inside a Docker container:
 
 ```shell
-docker run -it --net host --name bunny_teleop_server -v yzqin/bunny_teleop_server bash
+docker run -it --net host --name bunny_teleop_server yzqin/bunny_teleop_server bash
 ```
 
 ### 2. **Network Configuration**

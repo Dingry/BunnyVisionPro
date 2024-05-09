@@ -800,7 +800,7 @@ set up on different machines, for simplicity, this tutorial assumes they are on 
 <h2 id="bunny-teleoperation-server-setup">Bunny Teleoperation Server Setup<a class="headerlink" href="#bunny-teleoperation-server-setup" title="Permanent link">&para;</a></h2>
 <h3 id="1-start-the-server-docker">1. <strong>Start the Server Docker</strong><a class="headerlink" href="#1-start-the-server-docker" title="Permanent link">&para;</a></h3>
 <p>Execute the following command to run the teleoperation server inside a Docker container:</p>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-it<span class="w"> </span>--net<span class="w"> </span>host<span class="w"> </span>--name<span class="w"> </span>bunny_teleop_server<span class="w"> </span>-v<span class="w"> </span>yzqin/bunny_teleop_server<span class="w"> </span>bash
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-it<span class="w"> </span>--net<span class="w"> </span>host<span class="w"> </span>--name<span class="w"> </span>bunny_teleop_server<span class="w"> </span>yzqin/bunny_teleop_server<span class="w"> </span>bash
 </span></code></pre></div>
 <h3 id="2-network-configuration">2. <strong>Network Configuration</strong><a class="headerlink" href="#2-network-configuration" title="Permanent link">&para;</a></h3>
 <p>Ensure that the server, client, and Vision Pro are connected to the same Local Area Network (LAN).</p>

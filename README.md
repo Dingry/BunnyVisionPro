@@ -40,7 +40,7 @@ instructions.
 
 - [x] Tutorial for initialization
 - [x] Tutorial for tips and troubleshooting
-- [ ] Tutorial for retargeting
+- [x] Tutorial for retargeting
 - [ ] Robot collision avoidance
 - [ ] Robot arm singularity avoidance
 - [ ] Collision-free retargeting

@@ -17,5 +17,5 @@ progress, transitioning to two smaller 3D gizmos indicating the end effector pos
 After initialization, the robot will begin moving inside the web visualizer. The two small gizmo shows the end effector
 pose from human.
 
-![](../assets/videos/output_file.webp)
+![](../assets/videos/gizmo.webp)
 

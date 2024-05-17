@@ -14,3 +14,7 @@ imgui.ini
 /log
 /site/
 /bunny_teleop.egg-info/
+
+# Examples
+/examples/retargeting/data/
+!examples/retargeting/data/offline_avp_stream.pkl

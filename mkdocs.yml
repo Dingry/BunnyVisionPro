@@ -60,11 +60,6 @@ plugins:
   # - minify:
   #     minify_html: true
 
-# # Hooks
-# hooks:
-#   - material/overrides/hooks/shortcodes.py
-#   - material/overrides/hooks/translations.py
-
 # Additional configuration
 extra:
   status:
@@ -146,5 +141,5 @@ nav:
       - system/overview.md
       - advanced/initialization.md
       - advanced/visualization.md
-#  - Reference:
-#    - reference/index.md
+  - Example:
+      - example/retargeting.md

@@ -49,7 +49,7 @@ run_vision_server -c /server/bunny_teleop_server/configs/camera_config/visionpro
 Then, start the robot node for teleoperation:
 
 ```shell
-run_robot_server -c /server/bunny_teleop_server/configs/camera_config/visionpro_config.yml -k /server/bunny_teleop_server/configs/kinematics_config/bimanual_xarm7_ability.yml --comm /server/bunny_teleop_server/configs/communication_config/sim_web_visualizer.yml
+run_robot_server -c /server/bunny_teleop_server/configs/camera_config/visionpro_config.yml -k /server/bunny_teleop_server/configs/kinematics_config/bimanual_xarm7_ability.yml -comm /server/bunny_teleop_server/configs/communication_config/sim_web_visualizer.yml
 ```
 
 Use two terminal tabs for these servers, which can be managed using `tmux` inside Docker or by opening another terminal

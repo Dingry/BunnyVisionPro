@@ -895,7 +895,7 @@ and note the IPv4 address shown on the screen.</p>
 <div class="language-shell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>run_vision_server<span class="w"> </span>-c<span class="w"> </span>/server/bunny_teleop_server/configs/camera_config/visionpro_config.yml
 </span></code></pre></div>
 <p>Then, start the robot node for teleoperation:</p>
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>run_robot_server<span class="w"> </span>-c<span class="w"> </span>/server/bunny_teleop_server/configs/camera_config/visionpro_config.yml<span class="w"> </span>-k<span class="w"> </span>/server/bunny_teleop_server/configs/kinematics_config/bimanual_xarm7_ability.yml<span class="w"> </span>--comm<span class="w"> </span>/server/bunny_teleop_server/configs/communication_config/sim_web_visualizer.yml
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>run_robot_server<span class="w"> </span>-c<span class="w"> </span>/server/bunny_teleop_server/configs/camera_config/visionpro_config.yml<span class="w"> </span>-k<span class="w"> </span>/server/bunny_teleop_server/configs/kinematics_config/bimanual_xarm7_ability.yml<span class="w"> </span>-comm<span class="w"> </span>/server/bunny_teleop_server/configs/communication_config/sim_web_visualizer.yml
 </span></code></pre></div>
 <p>Use two terminal tabs for these servers, which can be managed using <code>tmux</code> inside Docker or by opening another terminal
 tab with:</p>

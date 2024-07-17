@@ -55,8 +55,9 @@ We thank all these authors for their nicely open sourced code and their great co
 
 ```
 @article{bunny-visionpro,
-  author  = {Runyu Ding, Yuzhe Qin, Jiyue Zhu, Chengzhe Jia, Shiqi Yang, Ruihan Yang, Xiaojuan Qi, and Xiaolong Wang},
-  title   = {Bunny-VisionPro: Bimanual Dexterous Teleoperation with Real-Time Retargeting using Vision Pro},
-  year   = {2024}
+      title={Bunny-VisionPro: Real-Time Bimanual Dexterous Teleoperation for Imitation Learning}, 
+      author={Runyu Ding and Yuzhe Qin and Jiyue Zhu and Chengzhe Jia and Shiqi Yang and Ruihan Yang and Xiaojuan Qi and Xiaolong Wang},
+      year={2024},
+      url={https://arxiv.org/abs/2407.03162}, 
 }
 ```

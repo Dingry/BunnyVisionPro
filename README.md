@@ -20,7 +20,7 @@
     .
     <a href="https://xiaolonw.github.io/"><strong>Xiaolong Wang</strong></a>
   </p>
-  <h3 align="center"><a href="https://dingry.github.io/projects/bunny_visionpro.html">Project Page</a> | <a href="https://dingry.github.io/BunnyVisionPro/">Documentation</a> | <a href="https://github.com/Dingry/bunny_teleop_server">Teleop Server Code</a> </h3>
+  <h3 align="center"><a href="https://dingry.github.io/projects/bunny_visionpro.html">Project Page</a> | <a href="https://dingry.github.io/BunnyVisionPro/">Documentation</a> | <a href="https://github.com/Dingry/bunny_teleop_server">Teleop Server Code</a> | <a href="https://docs.google.com/document/d/1V2H-Bgph3yEbQx_28yVG5igzBUv5WU2KjNU9RD1ZMk8/edit?usp=sharing">Haptics Implementation</a></h3>
   <div align="center"></div>
 </p>
 

@@ -35,7 +35,7 @@ example_requirements = [
 ]
 
 realcontrol_requirements = [
-    "sim_web_visualizer",
+    "yourdfpy",
     "pynput",
     "h5py"
 ]

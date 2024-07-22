@@ -32,8 +32,8 @@ Please refer to the [documentation](https://dingry.github.io/BunnyVisionPro/) fo
 instructions.
 
 ## :tada: News
-
-- [2024/05/06] :fire: Initial release with basic usage of bimanual teleoperation with Vision Pro. Check out
+- [2024/07/16] :fire: Release of real robot control code for the XArm7 and Ability Hand. Check out [README](real_control/README.md).
+- [2024/05/06] Initial release with basic usage of bimanual teleoperation with Vision Pro. Check out
   the [documentation](https://dingry.github.io/BunnyVisionPro/).
 
 ## :white_check_mark: TODO
@@ -41,6 +41,8 @@ instructions.
 - [x] Tutorial for initialization
 - [x] Tutorial for tips and troubleshooting
 - [x] Tutorial for retargeting
+- [x] Release haptic feedback device design 
+- [x] Real control code of XArm7 and Ability Hand
 - [ ] Robot collision avoidance
 - [ ] Robot arm singularity avoidance
 - [ ] Collision-free retargeting
@@ -55,9 +57,9 @@ We thank all these authors for their nicely open sourced code and their great co
 
 ```
 @article{bunny-visionpro,
-      title={Bunny-VisionPro: Real-Time Bimanual Dexterous Teleoperation for Imitation Learning}, 
-      author={Runyu Ding and Yuzhe Qin and Jiyue Zhu and Chengzhe Jia and Shiqi Yang and Ruihan Yang and Xiaojuan Qi and Xiaolong Wang},
-      year={2024},
-      url={https://arxiv.org/abs/2407.03162}, 
+    title   = {Bunny-VisionPro: Real-Time Bimanual Dexterous Teleoperation for Imitation Learning}, 
+    author  = {Runyu Ding and Yuzhe Qin and Jiyue Zhu and Chengzhe Jia and Shiqi Yang and Ruihan Yang and Xiaojuan Qi and Xiaolong Wang},
+    year    = {2024},
+    url     = {https://arxiv.org/abs/2407.03162}, 
 }
 ```

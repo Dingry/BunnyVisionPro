@@ -34,6 +34,13 @@ example_requirements = [
     "opencv-python",
 ]
 
+realcontrol_requirements = [
+    "sim_web_visualizer",
+    "pynput",
+    "h5py"
+]
+
+
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
@@ -84,6 +91,7 @@ def setup_package():
         extras_require={
             "dev": dev_requirements,
             "example": example_requirements,
+            "real_control": realcontrol_requirements,
         },
         classifiers=classifiers,
     )

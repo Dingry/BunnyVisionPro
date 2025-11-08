@@ -2,7 +2,7 @@
 
 <p align="center">
 
-  <h1 align="center"><img src="docs/assets/logo/bunny.png" width="80">Bunny-VisionPro: Real-Time Bimanual Dexterous Teleoperation for Imitation Learning></h1>
+  <h1 align="center"><img src="docs/assets/logo/bunny.png" width="80"><Bunny-VisionPro: Real-Time Bimanual Dexterous Teleoperation for Imitation Learning></h1>
   <p align="center">
     <a href="https://dingry.github.io/"><strong>Runyu Ding</strong></a>
     ·
